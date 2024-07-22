@@ -1,6 +1,10 @@
 import React from 'react'
 import './Hero.css'
 import Header from '../Header/Header'
+import hero_image from '../../../assets/hero_image.png'
+import hero_image_back from '../../../assets/hero_image_back.png'
+import Heart from '../../../assets/heart.png'
+import Calories from '../../../assets/calories.png'
 
 const Hero = () => {
   return (
@@ -16,7 +20,7 @@ const Hero = () => {
         <div className="hero-text">
 
           <div>
-            <span className="stroke-text">GImnasio</span>
+            <span >GImnasio</span>
             <span className="stroke-text"> Inclusivo</span>
           </div>
 
@@ -57,7 +61,34 @@ const Hero = () => {
         </div>
 
       </div> {/**end left */}
-      <div className="right-h">Right Side</div>
+
+
+
+      <div className="right-h">
+        <button className='btn'>Únete Ahora</button>
+
+
+      <div className="heart-rate">
+        <img src={Heart} alt="" />
+        <span>Ritmo Cardiaco</span>
+        <span>116 bpm</span>
+      </div>
+
+      {/**Hero Imagenes */}
+      <img src={hero_image} className='hero_image' alt=''/>
+      <img src={hero_image_back} className='hero_image_back' alt=''/>
+      {/**Calories imagen */}
+      <div className="calories">
+        <img src={Calories} alt="" />
+        <div className="">
+
+        <span>Calorias:</span><span>220 Kcal</span>
+        </div>
+      </div>
+
+
+
+      </div>
     </div>
   )
 }
